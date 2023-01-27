@@ -11,6 +11,7 @@ services:
             - /var/run/docker.sock:/tmp/docker.sock:ro
             - ./certs:/etc/nginx/certs
             - /etc/nginx/vhost.d
+            - ./config/nginx.conf:/etc/nginx/nginx.conf
         networks:
             - nginx-proxy-network
             
